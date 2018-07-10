@@ -4,11 +4,8 @@
   {% include head.html %}
 
   <body>
-
     <div>
-
       <header class="header-background">
-
         <div class="clearfix border-bottom-thick header-border">
           <ul class="list-reset right py-1 header-text font-smoothing">
             {% assign sorted_pages = site.pages | sort:"order" %}
@@ -21,16 +18,9 @@
             {% endfor %}
           </ul>
         </div>
-
         <div class="container mx-auto px-2 clearfix header-text">
-          
-          <!--<h1 class="h0 inline-block col-9 sm-width-full mb-minus-3 mt-4 header-title">&#x1F5FA;</h1>-->
-          <!--http://unicode.org/emoji/charts/full-emoji-list.html#1f310-->
-          <!--<p class="h2 lh-condensed font-smoothing mt-2 py-1">Baird Langenbrunner</p>-->
-          
           <h1 class="h0 inline-block col-9 mt-3 sm-width-full header-title-home">{{ site.title }}</h1>
           <!--{{ site.title }}Baird<br/>Langen<br/>brunner-->
-          
           <div class="clearfix">
             <div class="col-4 sm-width-full left border-top-thin">
               <div class="table">
@@ -45,40 +35,18 @@
                   {% include twitter.html %}
                 </div>
               </div>
-              <!-- Set site description in config.yml -->
-              <!--
-              <p class="h4 lh-condensed font-smoothing mt-2 py-1">{{ site.description }}</p>
-              -->
             </div>
-			
-			<!-- commented out by Baird
-            <div class="col-4 sm-width-full left border-top-thin mt-3 mt-lg-0 ml-lg-4 table">
-                <div class="inline-block mt-3 mr-1">
-                  {% include dot.html %}
-                </div>
-                <div class="inline-block mt-3">
-                  {% include {{ site.social_link | default: "twitter" }}.html %}
-                </div>
-            </div>
-            -->
-            
           </div>
-
         </div>
       </header>
-
-	  <!--
-      <div class="container mx-auto px-2 py-4">
-        {% for post in site.posts %}
-          {% include post_block.html %}
-        {% endfor %}
-      </div>
-      -->
-
     </div>
-
+    
+    <div class="container mx-auto px-2 py-4">
+        {% for post in site.posts %}
+        {% include post_block.html %}
+        {% endfor %}
+    </div>
+    
     {% include footer.html %}
-
   </body>
-
 </html>
