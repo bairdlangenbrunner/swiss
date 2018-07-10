@@ -3,7 +3,7 @@
 // Code formatting
 pre {
     margin: $spacer-3 0;
-    width: (9 / 12 * 100%); // matches col-9
+    width: 100%; // matches col-9
     overflow-x: auto;
     border-left: $spacer-1 solid $color-border; // adds vertical chunk
     padding-left: $body-font-size; //16px; // adds small margin to left
