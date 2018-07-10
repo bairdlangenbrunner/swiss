@@ -14,7 +14,7 @@ pre {
 
 code {
     color: $color-code;
-    font-size: 15px;//$body-font-size; // controls ALL code fonts
+    font-size: $body-font-size; // controls ALL code fonts
     padding: 1px 4px;
 }
 
