@@ -7,13 +7,14 @@ pre {
     overflow-x: auto;
     border-left: $spacer-1 solid $color-border; // adds vertical chunk
     padding-left: $body-font-size; //16px; // adds small margin to left
+    line-height: 1.25; // controls BOXED code snippets
     //padding-left: 5px;
-    background-color: $color-code-background;
+    //background-color: $color-code-background;
 }
 
 code {
     color: $color-code;
-    font-size: $body-font-size;
+    font-size: 15px;//$body-font-size; // controls ALL code fonts
     padding: 1px 4px;
 }
 

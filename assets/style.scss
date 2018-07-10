@@ -7,3 +7,7 @@
 @import
         "theme-{{ site.theme_color | default: "black" }}.scss"
 ;
+
+@import
+	"syntax-highlighting.scss"
+;

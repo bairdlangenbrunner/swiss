@@ -6,6 +6,25 @@ permalink: /about/
 
 Swiss is a bold Jekyll theme inspired by Swiss design and the works of Massimo Vignelli. This theme lends itself well to sites heavy on written content.
 
+```python
+# add python code here
+a = 6
+b = 7
+def plus(a,b):
+    return(a+b)
+```
+
+```
+# without "python" at top
+# add python code here
+a = 6
+b = 7
+def plus(a,b):
+    return(a+b)
+```
+
+This is what ```inline code``` looks like.
+
 ### Features:
 * Mobile-first design ensures this theme performs fastest on mobile while scaling elegantly to desktop-size screens.
 * Designed for blogs and sites heavy on written content, with bold typography styles, homepage summaries, and previous/next snippets.

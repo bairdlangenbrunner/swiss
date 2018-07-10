@@ -31,3 +31,4 @@ theme_color: solarized-teal
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
