@@ -1,8 +1,8 @@
 /* Type utilities */
 .h0 {
   font-size: $h0-mobile;
-  line-height: 1.0125;
-  margin-top: 0.85em;
+  line-height: 0.85em;
+  //margin-top: 0.85em;
   word-wrap: break-word;
 
   @media (min-width: $breakpoint-lg) {
@@ -11,20 +11,17 @@
 }
 
 .text-right { text-align: right; }
-
 .no-underline {
   text-decoration: none !important;
 
   &:hover {
-    text-decoration: none !important;
+    text-decoration: no-underline !important;
   }
 }
 
 .bold { font-weight: bold; }
 .uppercase { text-transform: uppercase; }
-
 .lh-condensed { line-height: 1.25; }
-
 .list-reset {
   list-style: none;
   padding-left: 0;
@@ -37,16 +34,23 @@
 .border-top-thin { border-top: 1px solid; border-color: currentColor; }
 .border-0 { border: 0; }
 
-
 /* Theme color utilities */
-.header-background { background-color: $color-background; }
-.header-border { border-color: $color-foreground; }
-.header-title { color: $color-title; }
-.header-text { color: $color-foreground; }
-.header-social { fill: $color-foreground; }
-.header-social-accent { fill: $color-dot-accent; }
-.header-link:hover { color: $color-nav-link !important; } // used for navigation links on homepage
-.text-accent { color: $color-text-accent; } // used for date in post list and home link
+.header-background { background-color: $theme-main; }
+.header-border { border-color: $theme-black; }
+.header-title-home { color: $color-home-header; }
+.header-title-page { color: $color-page-header; }
+.header-text { color: $theme-black; }
+.header-social { fill: $theme-black; } //$theme-black; } // color of dot 
+.header-social:hover { fill: $theme-white; }
+
+.header-social-inverted { background: $theme-black }
+.header-social-inverted:hover { background: $theme-white }
+
+.header-social-accent { fill: $theme-light-main; } // not used now, for a randomly accented dot
+
+.header-link:hover { color: $color-nav-link-hover !important; } // used for navigation links on homepage
+.header-link { color: $color-nav-link !important; } // added by Baird to make first page links white
+.text-accent { color: $theme-main; } // used for date in post list and home link
 
 /* Layout utilities */
 .container { max-width: $container-width; }
@@ -68,21 +72,22 @@
   .sm-width-full { width: 100% !important; }
 }
 
+// added by baird to make footer full screen width ALWAYS (change in footer.html)
+@media (min-width: 0em) {
+  .always-width-full { width: 100% !important; }
+}
+
 .block        { display: block !important; }
 .inline-block { display: inline-block !important; }
-
 .table { display: table !important; }
-
 .left { float: left; }
 .right { float: right; }
-
 .clearfix:before,
 .clearfix:after {
   content: " ";
   display: table
 }
 .clearfix:after { clear: both }
-
 .align-middle { vertical-align: middle; }
 
 /* Padding */
@@ -129,6 +134,8 @@
 .mb-4 { margin-bottom: $spacer-4; }
 .ml-4 { margin-left: $spacer-4; }
 
+.mb-minus-3 { margin-bottom: -$spacer-3; } // added by Baird
+
 // Responsive margin
 @media (min-width: 52em) {
   .mx-lg-auto { margin-left: auto; margin-right: auto; }
@@ -159,24 +166,44 @@
   .ml-lg-4 { margin-left: $spacer-4; }
 }
 
-// Link styles for social icons
+// Link styles for navigation
+.link-primary {
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary-link-hover;
+    text-decoration: none;
+  }
+}
+
+// https://codepen.io/ruandre/pen/howFi
+// // social media icon expansion!
+%social-icon-hover {
+  border-radius: 100%;
+  //transform: scale(1.25);
+}
+
 .link-social {
   text-decoration: none;
   font-weight: bold;
   line-height: 1;
-
+  
   &:hover {
+    @extend %social-icon-hover;
     text-decoration: none !important;
+    
   }
 }
 
-// Link styles for navigation
-.link-primary {
-  font-weight: bold;
-  text-decoration: none !important;
-
-  &:hover {
-    color: $color-primary-link;
-    text-decoration: none !important;
-  }
-}
+//OLD VERSION:
+///// Link styles for social icons
+// .link-social {
+//   text-decoration: none;
+//   font-weight: bold;
+//   line-height: 1;
+// 
+//   &:hover {
+//     text-decoration: none !important;
+//   }
+// }

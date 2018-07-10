@@ -32,7 +32,7 @@ body {
     font-size: $body-font-size;
     line-height: 1.5;
     color: $color-body-text;
-    background-color: #fff;
+    background-color: $site-background-color; /*#fff;*/
 }
 
 p {
@@ -52,11 +52,12 @@ h4, .h4 { font-size: $h4-size; }
 h5, .h5 { font-size: $h5-size; }
 h6, .h6 { font-size: $h6-size; text-transform: uppercase; letter-spacing: 0.02em; }
 
+/*inherit*/
 a {
-  color: inherit;
+  color: $color-primary-link;
   text-decoration: none;
 }
-
 a:hover {
+  color: $color-primary-link;
   text-decoration: underline;
 }
