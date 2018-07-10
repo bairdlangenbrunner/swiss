@@ -11,7 +11,8 @@
 
         <div class="clearfix border-bottom-thick header-border">
           <ul class="list-reset right py-1 header-text font-smoothing">
-            {% for my_page in site.pages %}
+            {% assign sorted_pages = site.pages | sort:"order" %}
+            {% for my_page in sorted_pages %}
               {% if my_page.title %}
               <li class="inline-block">
                 <a class="align-middle link-primary header-link mr-2" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
@@ -21,26 +22,36 @@
           </ul>
         </div>
 
-        <div class="container mx-auto px-2 mb-2 clearfix header-text">
-          <h1 class="h0 inline-block col-9 sm-width-full py-4 mt-3 header-title">{{ site.title }}</h1>
-
-          <div class="clearfix mb-4 py-1">
+        <div class="container mx-auto px-2 clearfix header-text">
+          
+          <!--<h1 class="h0 inline-block col-9 sm-width-full mb-minus-3 mt-4 header-title">&#x1F5FA;</h1>-->
+          <!--http://unicode.org/emoji/charts/full-emoji-list.html#1f310-->
+          <!--<p class="h2 lh-condensed font-smoothing mt-2 py-1">Baird Langenbrunner</p>-->
+          
+          <h1 class="h0 inline-block col-9 mt-3 sm-width-full header-title-home">{{ site.title }}</h1>
+          <!--{{ site.title }}Baird<br/>Langen<br/>brunner-->
+          
+          <div class="clearfix">
             <div class="col-4 sm-width-full left border-top-thin">
               <div class="table">
-                <div class="inline-block mt-3 mr-1">
-                  {% include dot-accent.html %}
+                <div class="inline-block mt-3 mb-3 mr-1">
+                  <!--{% include dot-accent.html %}-->
+                  {% include linkedin.html %}
                 </div>
-                <div class="inline-block mt-3 mr-1">
-                  {% include dot-accent.html %}
-                </div>
-                <div class="inline-block mt-3">
+                <div class="inline-block mt-3 mb-3 mr-1">
                   {% include github.html %}
+                </div>
+                <div class="inline-block mt-3 mb-3">
+                  {% include twitter.html %}
                 </div>
               </div>
               <!-- Set site description in config.yml -->
+              <!--
               <p class="h4 lh-condensed font-smoothing mt-2 py-1">{{ site.description }}</p>
+              -->
             </div>
-
+			
+			<!-- commented out by Baird
             <div class="col-4 sm-width-full left border-top-thin mt-3 mt-lg-0 ml-lg-4 table">
                 <div class="inline-block mt-3 mr-1">
                   {% include dot.html %}
@@ -49,16 +60,20 @@
                   {% include {{ site.social_link | default: "twitter" }}.html %}
                 </div>
             </div>
+            -->
+            
           </div>
 
         </div>
       </header>
 
+	  <!--
       <div class="container mx-auto px-2 py-4">
         {% for post in site.posts %}
           {% include post_block.html %}
         {% endfor %}
       </div>
+      -->
 
     </div>
 
