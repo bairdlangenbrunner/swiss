@@ -1,0 +1,198 @@
+// import color-variables.scss
+// if you want to add any colors, change them there
+@import 'color-variables';
+
+//$theme-style: '{{ site.theme_style | default: 'light' }}';
+//$theme-style: 'dark';
+
+$theme-color: 'orange';
+$theme-style: 'light';
+
+$primary-warm-light: null;
+$primary-warm: null;
+$primary-warm-dark: null;
+$primary-cool-light: null;
+$primary-cool: null;
+$primary-cool-dark: null;
+
+$theme-main: $primary-warm;
+$theme-main-light: $primary-warm-light;
+$theme-comp: $primary-cool;
+$theme-comp-light: $primary-cool-light;
+
+//$theme-color: '{{ site.theme_color | default: 'green' }}';
+// choose either a warm or cool color and a ligher version
+// as the theme-main and theme-main-light.  This is the primary
+// color on the front page, and what a lot of design is based on
+
+@if $theme-color == 'green' {
+	// green with purple complements
+	$primary-warm-light: $swiss-green-light;
+	$primary-warm: $swiss-green;
+	$primary-warm-dark: $swiss-green-dark;
+	$primary-cool-light: $swiss-purple-light;
+	$primary-cool: $swiss-purple;
+	$primary-cool-dark: $swiss-purple-dark;
+	
+	$theme-main: $primary-warm;
+	$theme-main-light: $primary-warm-light;
+	$theme-comp: $primary-cool;
+	$theme-comp-light: $primary-cool-light;
+}
+
+@if $theme-color == 'orange' {
+	// green with purple complements
+	$primary-warm-light: $swiss-orange-light;
+	$primary-warm: $swiss-orange;
+	$primary-warm-dark: $swiss-orange-dark;
+	$primary-cool-light: $swiss-teal-light;
+	$primary-cool: $swiss-teal;
+	$primary-cool-dark: $swiss-teal-dark;
+	
+	$theme-main: $primary-warm;
+	$theme-main-light: $primary-warm-light;
+	$theme-comp: $primary-cool;
+	$theme-comp-light: $primary-cool-light;
+}
+
+@if $theme-color == 'purple' {
+	// green with purple complements
+	$primary-warm-light: $swiss-green-light;
+	$primary-warm: $swiss-green;
+	$primary-warm-dark: $swiss-green-dark;
+	$primary-cool-light: $swiss-purple-light;
+	$primary-cool: $swiss-purple;
+	$primary-cool-dark: $swiss-purple-dark;
+	
+	$theme-main: $primary-cool;
+	$theme-main-light: $primary-cool-light;
+	$theme-comp: $primary-warm;
+	$theme-comp-light: $primary-warm-light;
+}
+
+@if $theme-color == 'yellow' {
+	// green with purple complements
+	$primary-warm-light: $swiss-yellow-light;
+	$primary-warm: $swiss-yellow;
+	$primary-warm-dark: $swiss-yellow-dark;
+	$primary-cool-light: $swiss-purple-light;
+	$primary-cool: $swiss-purple;
+	$primary-cool-dark: $swiss-purple-dark;
+	
+	$theme-main: $primary-warm;
+	$theme-main-light: $primary-warm-light;
+	$theme-comp: $primary-cool;
+	$theme-comp-light: $primary-cool-light;
+}
+
+$theme-white: $swiss-white;
+$theme-white-dark: $swiss-white-dark;
+
+$theme-black: $swiss-black;
+$theme-gray: $swiss-gray;
+$theme-gray-light: $swiss-gray-light;
+
+// inititalize all variables so that they
+// continue outsie of the if statement
+
+$base-tint: null;
+$base-tint-light: null;
+$contrast-tint-light: null;
+$contrast-tint-dark: null;
+
+$site-background-color: null;
+$site-background-color-offset: null;
+$site-background-contrast-high: null;
+$site-background-contrast-low: null;
+$color-code: null;
+$color-code-outline: null;
+$color-background: null;
+$color-dot-accent: null;
+$color-home-header: null;
+$color-page-header: null;
+$color-body-text: null;
+$color-text-accent: null;
+$color-nav-link: null;
+$color-nav-link-hover: null;
+$color-primary-link: null;
+$color-primary-link-hover: null;
+$color-border: null;
+
+@if $theme-style == 'light' {
+	// set all site colors
+	$site-background-color: $theme-white;
+	$site-background-color-offset: $theme-white-dark;
+	$site-background-contrast-high: $theme-gray;
+	$site-background-contrast-low: $theme-gray-light;
+	$color-code: $theme-main-light;
+	$color-code-outline: $theme-white-dark;
+	$color-background: $theme-main;
+	$color-dot-accent: $theme-black;
+	$color-home-header: $theme-white;
+	$color-page-header: $theme-white-dark;
+	$color-body-text: $theme-black;
+	$color-text-accent: $theme-main;
+	$color-nav-link: $theme-white;
+	$color-nav-link-hover: $theme-black;
+	$color-primary-link: $theme-main;
+	$color-primary-link-hover: $theme-black;
+	$color-border: $theme-main;
+}
+
+@if $theme-style == 'dark' {
+	// set all site colors
+	
+	// start with a base tint and a light version of it
+	$base-tint: $swiss-black;
+	$base-tint-light: $swiss-gray;
+	
+	$contrast-tint-light: $swiss-white;
+	$contrast-tint-dark: $swiss-white-dark;
+	
+	$site-background-color: $theme-black;
+	$site-background-color-offset: $swiss-gray;
+	$site-background-contrast-high: $theme-white;
+	$site-background-contrast-low: $theme-white-dark;
+	
+	$color-code: $theme-main-light;
+	$color-code-outline: $theme-gray;
+	$color-background: $theme-main;
+	$color-dot-accent: $theme-white-dark;
+	$color-home-header: $theme-black;
+	$color-page-header: $theme-black;
+	$color-body-text: $theme-white-dark;
+	$color-text-accent: $theme-main;
+	$color-nav-link: $theme-black;
+	$color-nav-link-hover: $theme-white-dark;
+	$color-primary-link: $theme-main;
+	$color-primary-link-hover: $theme-white-dark;
+	$color-border: $theme-main;
+}
+
+// button colors
+// note there's a default and a
+// "theme" and "theme-filled" that
+// aren't shown here but are in the
+// buttons.scss file
+$success-color: $swiss-green-light;
+$warning-color: $swiss-orange-light;
+$danger-color: $swiss-red;
+$info-color: $swiss-purple;
+$facebook-color: $theme-main;
+$twitter-color: $theme-main;
+$google-plus-color: $theme-main;
+$linkedin-color: $theme-main;
+
+// YIQ color contrast, needed
+// in buttons/notices from minimal-mistakes
+$yiq-contrasted-dark-default: $swiss-gray;
+$yiq-contrasted-light-default: $swiss-white;
+$yiq-contrasted-threshold: 175;
+$yiq-debug: false;
+
+// Import sass partials (used in all themes)
+@import "variables";
+@import "base";
+@import "components";
+@import "utilities";
+@import "mixins";
