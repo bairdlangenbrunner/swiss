@@ -6,9 +6,9 @@ permalink: /about/
 
 This theme is adapted from Swiss, which itself was "inspired by Swiss design and the works of Massimo Vignelli."  I (Baird) think it's a beautiful theme to start from, and I wanted to edit it to include things like more advanced syntax highlighting and simpler page responses to media.
 
-The primary reason I designed this theme is to be able to discuss research, coding, and blog all within the same document.  Jekyll and GitHub Pages allows for this very nicely, but it's a bit of a learning curve at first.
+The primary reason I was attracted to this theme--and Jekyll/GitHub Pages more generally--is the fact that it allows for easy markdown-inspired blogging, code documentation, and research tangents all within the same document.
 
-Something I've specifically added on top of the Swiss theme is syntax highlighting.  By default, it comes with the Solarized Dark theme.  Some example code looks like this:
+Something I've specifically added on top of the Swiss theme is syntax highlighting.  By default, this version comes with the Solarized Dark theme.  Some example code looks like this:
 
 ```python
 # add python code here

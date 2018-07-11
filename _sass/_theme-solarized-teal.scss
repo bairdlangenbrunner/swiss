@@ -4,6 +4,7 @@
 $black: #002b36;
 $light-black: #262626;
 
+$light-white: #fefefc; 
 $white: #fdf6e3;
 $dark-white: #eee8d5;
 
@@ -30,7 +31,8 @@ $theme-light-black: $light-black !default;
 $site-background-color: $theme-white;
 
 $color-code: $theme-light-main !default;
-$color-code-background: $theme-dark-white !default;
+//$color-code-background: $theme-dark-white !default;
+$color-code-outline: $theme-dark-white !default;
 
 // Config
 $color-background: $theme-main !default;
