@@ -1,0 +1,106 @@
+@import
+		"color-variables"
+}
+
+// Color variables
+
+// specify a primary-warm color and a primary-cool color
+// for each, add a light, regular, and dark version
+// also use a black, light-black
+// a light-white, white, and dark-white
+$yellow: #b58900;
+
+// based on solarized
+$black: #002b36;
+$gray: #586e65;
+$gray-light: #839496;
+
+// based on solarized
+$white-light: #fefefc; 
+$white: #fdf6e3;
+$white-dark: #eee8d5;
+
+// orange based on solarized
+$orange-light: #d56e44;
+$orange: #cb4b16;
+$orange-dark: d67632;
+
+// purple (from color brewer)
+$purple-light: #9e9ac8;
+$purple: #6a51a3;
+$purple-dark: #3f007d;
+
+// greens
+$green-light: #238b45;
+$green: #006d2c;
+$green-dark: #00441b;
+
+// teal 
+$teal-light: #2ea0a0;
+$teal: #008080;
+$teal-dark: #006666;
+
+$primary-warm-light: $orange-light !default;
+$primary-warm: $orange !default;
+$primary-warm-dark: $orange-dark !default;
+
+$primary-cool-light: $teal-light !default;
+$primary-cool: $teal !default;
+$primary-cool-dark: $teal-dark !default;
+
+// choose either a warm or cool color and a ligher version
+// as the theme-main and theme-main-light.  This is the primary
+// color on the front page, and what a lot of design is based on
+
+// added by Baird for code formatting
+$theme-main: $primary-cool !default;
+$theme-main-light: $primary-cool-light !default;
+$theme-comp: $primary-warm !default;
+$theme-comp-light: $primary-warm-light !default;
+$theme-white: $white !default;
+$theme-white-dark: $white-dark !default;
+$theme-black: $black !default;
+$theme-gray: $gray !default;
+$theme-gray-light: $gray-light !default;
+
+// uncomment below for a white background
+// WHITE BACKGROUND
+$site-background-color: $theme-white;
+$color-code: $theme-main-light !default;
+$color-code-outline: $theme-white-dark !default;
+$color-background: $theme-main !default;
+$color-dot-accent: $theme-black !default;
+$color-home-header: $theme-white !default;
+$color-page-header: $theme-white-dark !default;
+$color-body-text: $theme-black !default;
+$color-text-accent: $theme-main !default;
+$color-nav-link: $theme-white !default;
+$color-nav-link-hover: $theme-black !default;
+$color-primary-link: $theme-main !default;
+$color-primary-link-hover: $theme-black !default;
+$color-border: $theme-main !default;
+
+// uncomment below for a black background
+// BLACK BACKGROUND
+// $site-background-color: $theme-black;
+// $color-code: $theme-main-light !default;
+// $color-code-outline: $theme-gray !default;
+// $color-background: $theme-main !default;
+// $color-dot-accent: $theme-white-dark !default;
+// $color-home-header: $theme-black !default;
+// $color-page-header: $theme-black !default;
+// $color-body-text: $theme-white-dark !default;
+// $color-text-accent: $theme-main !default;
+// $color-nav-link: $theme-black !default;
+// $color-nav-link-hover: $theme-white-dark !default;
+// $color-primary-link: $theme-main !default;
+// $color-primary-link-hover: $theme-white-dark !default;
+// $color-border: $theme-main !default;
+
+// Import sass partials (used in all themes)
+@import
+        "variables",
+        "base",
+        "components",
+        "utilities"
+;

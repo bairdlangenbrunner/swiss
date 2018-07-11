@@ -1,10 +1,11 @@
 ---
-layout: category_index
-title: Writing
-permalink: /writing/
-category_name: writing
+layout: page
+title: writing
+permalink: /writing/index.html
+order: 5
 ---
 
+A place to put all written things that aren't specifically blog articles.
 <!--
 
 Set the front matter:

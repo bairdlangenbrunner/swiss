@@ -1,22 +1,47 @@
-title: Baird's Swiss Theme
-description: A revised version of the Swiss Jekyll theme
+title: Swiss cheese
+theme_color: green-light # options: yellow, orange, green, teal, purple, black
+#theme_style: light # options: dark or light (for background)
+syntax_highlighting: light # light or dark (solarized color scheme)
+
+author: Baird
+email: langenbrunner@gmail.com
+timezone: America/Los_Angeles
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: bairdlangenbrunner # the GitHub repo name for your project
-github_username: bairdlangenbrunner
+twitter_username:  heyitsbaird
+github_username:  bairdlangenbrunner
+linkedin_username:  bairdlangenbrunner
 
-# Optional social link, you can choose from the following options:
-# twitter (default), instagram, medium, or dribbble
-social_link: twitter
-social_username: jekyllrb
 
-# Set theme color here
-# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-theme_color: solarized-teal
+plugins:
+  - jekyll-feed
+  - jemoji
+
+include:
+  - _pages
+
+collections:
+  - writing
+  - projects
+
+collections:
+  writing:
+    output: true
+    permalink: /:collection/:name
+  projects:
+    output: true
+    permalink: /:collection/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: coding
+    values:
+      layout: page
+
+collections_dir: collections
 
 # Build settings
 markdown: kramdown
 highlighter: rouge
-
-author: Baird
-email: langenbrunner@gmail.com

@@ -1,0 +1,142 @@
+// import color-variables.scss
+// if you want to add any colors, change them there
+@import
+		'color-variables'
+;
+
+$theme-style: 'light';
+//$theme-style: 'dark';
+
+$primary-warm-light: null;
+$primary-warm: null;
+$primary-warm-dark: null;
+$primary-cool-light: null;
+$primary-cool: null;
+$primary-cool-dark: null;
+
+// choose either a warm or cool color and a ligher version
+// as the theme-main and theme-main-light.  This is the primary
+// color on the front page, and what a lot of design is based on
+@if '{{site.theme_color}}'=='green' {
+	// green with purple complements
+	$primary-warm-light: $green-light !default;
+	$primary-warm: $green !default;
+	$primary-warm-dark: $green-dark !default;
+	$primary-cool-light: $purple-light !default;
+	$primary-cool: $purple !default;
+	$primary-cool-dark: $purple-dark !default;
+}
+
+// set the main and complementary colors in the theme
+$theme-main: $primary-warm !default;
+$theme-main-light: $primary-warm-light !default;
+
+$theme-comp: $primary-cool !default;
+$theme-comp-light: $primary-cool-light !default;
+
+$theme-white: $white !default;
+$theme-white-dark: $white-dark !default;
+
+$theme-black: $black !default;
+$theme-gray: $gray !default;
+$theme-gray-light: $gray-light !default;
+
+
+// inititalize all variables so that they
+// continue outsie of the if statement
+$site-background-color: null;
+$site-background-color-offset: null;
+$site-background-contrast-high: null;
+$site-background-contrast-low: null;
+$color-code: null;
+$color-code-outline: null;
+$color-background: null;
+$color-dot-accent: null;
+$color-home-header: null;
+$color-page-header: null;
+$color-body-text: null;
+$color-text-accent: null;
+$color-nav-link: null;
+$color-nav-link-hover: null;
+$color-primary-link: null;
+$color-primary-link-hover: null;
+$color-border: null;
+$syntax-highlighting-file: null;
+
+@if $theme-style == 'light' {
+	// set all site colors
+	$site-background-color: $theme-white;
+	$site-background-color-offset: $theme-white-dark;
+	$site-background-contrast-high: $theme-gray;
+	$site-background-contrast-low: $theme-gray-light;
+	$color-code: $theme-main-light;
+	$color-code-outline: $theme-white-dark;
+	$color-background: $theme-main;
+	$color-dot-accent: $theme-black;
+	$color-home-header: $theme-white;
+	$color-page-header: $theme-white-dark;
+	$color-body-text: $theme-black;
+	$color-text-accent: $theme-main;
+	$color-nav-link: $theme-white;
+	$color-nav-link-hover: $theme-black;
+	$color-primary-link: $theme-main;
+	$color-primary-link-hover: $theme-black;
+	$color-border: $theme-main;
+	// set solarized theme to light
+	$syntax-highlighting-file: '_syntax-highlighting-solarized-light.scss';
+}
+
+@if ($theme-style == 'dark') {
+	// set all site colors
+	$site-background-color: $theme-black;
+	$site-background-color-offset: $gray;
+	$site-background-contrast-high: $theme-white;
+	$site-background-contrast-low: $theme-white-dark;
+	$color-code: $theme-main-light;
+	$color-code-outline: $theme-gray;
+	$color-background: $theme-main;
+	$color-dot-accent: $theme-white-dark;
+	$color-home-header: $theme-black;
+	$color-page-header: $theme-black;
+	$color-body-text: $theme-white-dark;
+	$color-text-accent: $theme-main;
+	$color-nav-link: $theme-black;
+	$color-nav-link-hover: $theme-white-dark;
+	$color-primary-link: $theme-main;
+	$color-primary-link-hover: $theme-white-dark;
+	$color-border: $theme-main;
+	// set solarized theme to dark
+	$syntax-highlighting-file: '_syntax-highlighting-solarized-dark.scss';
+}
+
+// button colors
+// note there's a default and a
+// "theme" and "theme-filled" that
+// aren't shown here but are in the
+// buttons.scss file
+$success-color: $green-light !default;
+$warning-color: $orange-light !default;
+$danger-color: $red !default;
+$info-color: $purple !default;
+$facebook-color: $theme-main !default;
+$twitter-color: $theme-main !default;
+$google-plus-color: $theme-main !default;
+$linkedin-color: $theme-main !default;
+
+// YIQ color contrast, needed
+// in buttons/notices from minimal-mistakes
+$yiq-contrasted-dark-default: $gray !default;
+$yiq-contrasted-light-default: $white !default;
+$yiq-contrasted-threshold: 175 !default;
+$yiq-debug: false !default;
+
+// Import sass partials (used in all themes)
+@import
+        "variables",
+        "base",
+        "components",
+        "utilities",
+        "mixins",
+        "buttons",
+        "notices"
+;

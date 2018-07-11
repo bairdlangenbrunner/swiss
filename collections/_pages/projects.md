@@ -1,7 +1,8 @@
 ---
 layout: page
-title: about
-permalink: /about/
+title: projects
+permalink: /projects/index.html
+order: 3
 ---
 
 This theme is adapted from Swiss, which itself was "inspired by Swiss design and the works of Massimo Vignelli."  I (Baird) think it's a beautiful theme to start from, and I wanted to edit it to include things like more advanced syntax highlighting and simpler page responses to media.

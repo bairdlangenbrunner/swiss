@@ -1,0 +1,45 @@
+// Color variables
+
+// specify a primary-warm color and a primary-cool color
+// for each, add a light, regular, and dark version
+// also use a black, light-black
+// a light-white, white, and dark-white
+
+// based on solarized
+$swiss-black: #002b36;
+$swiss-gray: #586e65;
+$swiss-gray-light: #839496;
+
+// based on solarized
+$swiss-white-light: #fefefc; 
+$swiss-white: #fdf6e3;
+$swiss-white-dark: #eee8d5;
+
+// orange based on solarized
+$swiss-orange-light: #d56e44;
+$swiss-orange: #cb4b16;
+$swiss-orange-dark: d67632;
+
+// reds
+$swiss-red: #b22222;
+
+// purple (from color brewer)
+$swiss-purple-light: #9e9ac8;
+$swiss-purple: #6a51a3;
+$swiss-purple-dark: #3f007d;
+
+// greens
+$swiss-green-light: #41ab5d;
+$swiss-green: #006d2c;
+$swiss-green-dark: #00441b;
+
+// teal 
+$swiss-teal-light: #2ea0a0;
+$swiss-teal: #008080;
+$swiss-teal-dark: #006666;
+
+// yellow
+$swiss-yellow: 	#fbaa00; //#b58900;
+$swiss-yellow-light:  $swiss-yellow;
+$swiss-yellow-dark: $swiss-yellow;
+//$swiss-yellow-light: #fffe7a;
