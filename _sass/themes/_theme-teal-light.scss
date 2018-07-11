@@ -55,7 +55,7 @@ $theme-comp-light: $primary-cool-light;
 	$theme-comp-light: $primary-cool-light;
 }
 
-@if $theme-color == 'purple' {
+@if $theme-color == 'teal' {
 	// green with purple complements
 	$primary-warm-light: $swiss-orange-light;
 	$primary-warm: $swiss-orange;
