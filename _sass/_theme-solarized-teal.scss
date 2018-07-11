@@ -52,31 +52,6 @@ $color-primary-link-hover: $theme-black !default;
 // Default border color
 $color-border: $theme-main !default;
 
-///// BLACK BACKGROUND
-
-// $site-background-color: $theme-black;
-// 
-// $color-code: $theme-light-main !default;
-// $color-code-background: $theme-light-black !default;
-// 
-// // Config
-// $color-background: $theme-main !default;
-// $color-dot-accent: $theme-white !default;
-// $color-home-title: $theme-black !default;
-// $color-page-title: $theme-light-black !default;
-// $color-body-text: $theme-white !default;
-// $color-text-accent: $theme-main !default;
-// 
-// $color-nav-link: $theme-black !default;
-// $color-nav-link-hover: $theme-light-black !default;
-// 
-// $color-primary-link: $theme-main !default;
-// $color-primary-link-hover: $theme-light-main !default;
-// 
-// // stolen from variables.scss
-// // Default border color
-// $color-border: $theme-main !default;
-
 // Import sass partials (used in all themes)
 @import
         "variables",
