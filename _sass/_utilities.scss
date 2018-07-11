@@ -70,6 +70,7 @@
 
 @media (max-width: $breakpoint-lg) {
   .sm-width-full { width: 100% !important; }
+  .align-left-and-pad-when-small {margin-left: 0 !important; padding-right: $body-font-size !important; }
 }
 
 // added by baird to make footer full screen width ALWAYS (change in footer.html)
@@ -90,7 +91,7 @@
 
 .clearfix:after { clear: both }
 .align-middle { vertical-align: middle; }
-/*.align-bottom { vertical-align: bottom; } */
+.align-bottom { vertical-align: bottom; }
 
 /* Padding */
 .px-0 { padding-left: 0; padding-right:  0 }
@@ -141,34 +142,34 @@
 //// BAIRD REMOVING THIS BECAUSE IT'S MAKING THE MARGINS DO FUNNY THINGS
 //// IN THE NAVIGATION BAR...
 // Responsive margin
-// @media (min-width: $breakpoint-lg) {
-//   .mx-lg-auto { margin-left: auto; margin-right: auto; }
-// 
-//   .mt-lg-0 { margin-top: 0; }
-//   .mr-lg-0 { margin-right: 0; }
-//   .mb-lg-0 { margin-bottom: 0; }
-//   .ml-lg-0 { margin-left: 0; }
-// 
-//   .mt-lg-1 { margin-top: $spacer-1; }
-//   .mr-lg-1 { margin-right: $spacer-1; }
-//   .mb-lg-1 { margin-bottom: $spacer-1; }
-//   .ml-lg-1 { margin-left: $spacer-1; }
-// 
-//   .mt-lg-2 { margin-top: $spacer-2; }
-//   .mr-lg-2 { margin-right: $spacer-2; }
-//   .mb-lg-2 { margin-bottom: $spacer-2; }
-//   .ml-lg-2 { margin-left: $spacer-2; }
-// 
-//   .mt-lg-3 { margin-top: $spacer-3; }
-//   .mr-lg-3 { margin-right: $spacer-3; }
-//   .mb-lg-3 { margin-bottom: $spacer-3; }
-//   .ml-lg-3 { margin-left: $spacer-3; }
-// 
-//   .mt-lg-4 { margin-top: $spacer-4; }
-//   .mr-lg-4 { margin-right: $spacer-4; }
-//   .mb-lg-4 { margin-bottom: $spacer-4; }
-//   .ml-lg-4 { margin-left: $spacer-4; }
-// }
+@media (min-width: $breakpoint-lg) {
+  .mx-lg-auto { margin-left: auto; margin-right: auto; }
+
+  .mt-lg-0 { margin-top: 0; }
+  .mr-lg-0 { margin-right: 0; }
+  .mb-lg-0 { margin-bottom: 0; }
+  .ml-lg-0 { margin-left: 0; }
+
+  .mt-lg-1 { margin-top: $spacer-1; }
+  .mr-lg-1 { margin-right: $spacer-1; }
+  .mb-lg-1 { margin-bottom: $spacer-1; }
+  .ml-lg-1 { margin-left: $spacer-1; }
+
+  .mt-lg-2 { margin-top: $spacer-2; }
+  .mr-lg-2 { margin-right: $spacer-2; }
+  .mb-lg-2 { margin-bottom: $spacer-2; }
+  .ml-lg-2 { margin-left: $spacer-2; }
+
+  .mt-lg-3 { margin-top: $spacer-3; }
+  .mr-lg-3 { margin-right: $spacer-3; }
+  .mb-lg-3 { margin-bottom: $spacer-3; }
+  .ml-lg-3 { margin-left: $spacer-3; }
+
+  .mt-lg-4 { margin-top: $spacer-4; }
+  .mr-lg-4 { margin-right: $spacer-4; }
+  .mb-lg-4 { margin-bottom: $spacer-4; }
+  .ml-lg-4 { margin-left: $spacer-4; }
+}
 
 // Link styles for navigation
 .link-primary {
