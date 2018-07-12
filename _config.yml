@@ -18,18 +18,16 @@ plugins:
   - jekyll-feed
   - jemoji
 
+# this will make sure pages get navbar placement
 include:
   - _pages
 
+# note:  pages and posts are core collections!
 collections:
   - writing
-  - projects
 
 collections:
   writing:
-    output: true
-    permalink: /:collection/:name
-  projects:
     output: true
     permalink: /:collection/:name
 
@@ -44,6 +42,11 @@ defaults:
       type: posts
     values:
       layout: category-post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
 
 collections_dir: collections
 

@@ -1,6 +1,7 @@
 ---
 layout: page
 title:  "markdown"
+permalink: /markdown/
 order: 2
 ---
 
