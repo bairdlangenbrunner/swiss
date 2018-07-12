@@ -18,7 +18,7 @@
   text-decoration: none;
   border-width: 2px;
   border-radius: $border-radius;
-  //border-color: $theme-main;
+  //border-color: $theme-color;
   cursor: pointer;
 
   .icon {
@@ -31,9 +31,9 @@
 
   /* button colors */
   $buttoncolors:
-  (theme, $site-background-color),
-  (theme-filled, $theme-main),
-  (inverse, $site-background-color),
+  (theme, $site-background-base),
+  (theme-filled, $theme-color),
+  (inverse, $site-background-base),
   (light-outline, transparent),
   (success, $success-color),
   (warning, $warning-color),
@@ -49,13 +49,13 @@
       @include yiq-contrasted($color);
       
       @if ($buttoncolor == theme) {
-        border: 2px solid $theme-main;
+        border: 2px solid $theme-color;
       }
       @if ($buttoncolor == inverse) {
-        border: 2px solid $site-background-contrast-low;
+        border: 2px solid $site-background-base-offset;
       }
       @if ($buttoncolor == light-outline) {
-        border: 2px solid $site-background-color;
+        border: 2px solid $site-background-base;
       }
 
       &:hover {

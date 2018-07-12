@@ -1,6 +1,6 @@
 ---
 
-title:  "Looooooooooooooooooooooooooooooooooooooooooooooooooooooog title (checking for word wrap)"
+title:  "Looooooooooooooooooooooooooooooooooooooooooooooooooooooong title (checking for word wrap)"
 
 date:   2016-08-05 20:20:56 -0400
 

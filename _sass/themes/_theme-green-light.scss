@@ -5,8 +5,8 @@
 //$theme-style: '{{ site.theme_style | default: 'light' }}';
 //$theme-style: 'dark';
 
-$theme-color: 'green';
-$theme-style: 'light';
+$swiss-theme-color: 'green';
+$swiss-theme-style: 'light';
 
 $primary-warm-light: null;
 $primary-warm: null;
@@ -15,17 +15,17 @@ $primary-cool-light: null;
 $primary-cool: null;
 $primary-cool-dark: null;
 
-$theme-main: $primary-warm;
-$theme-main-light: $primary-warm-light;
+$theme-color: $primary-warm;
+$theme-color-light: $primary-warm-light;
 $theme-comp: $primary-cool;
 $theme-comp-light: $primary-cool-light;
 
 //$theme-color: '{{ site.theme_color | default: 'green' }}';
 // choose either a warm or cool color and a ligher version
-// as the theme-main and theme-main-light.  This is the primary
+// as the theme-color and theme-color-light.  This is the primary
 // color on the front page, and what a lot of design is based on
 
-@if $theme-color == 'green' {
+@if $swiss-theme-color == 'green' {
 	// green with purple complements
 	$primary-warm-light: $swiss-green-light;
 	$primary-warm: $swiss-green;
@@ -34,13 +34,13 @@ $theme-comp-light: $primary-cool-light;
 	$primary-cool: $swiss-purple;
 	$primary-cool-dark: $swiss-purple-dark;
 	
-	$theme-main: $primary-warm;
-	$theme-main-light: $primary-warm-light;
+	$theme-color: $primary-warm;
+	$theme-color-light: $primary-warm-light;
 	$theme-comp: $primary-cool;
 	$theme-comp-light: $primary-cool-light;
 }
 
-@if $theme-color == 'orange' {
+@if $swiss-theme-color == 'orange' {
 	// green with purple complements
 	$primary-warm-light: $swiss-orange-light;
 	$primary-warm: $swiss-orange;
@@ -49,13 +49,13 @@ $theme-comp-light: $primary-cool-light;
 	$primary-cool: $swiss-teal;
 	$primary-cool-dark: $swiss-teal-dark;
 	
-	$theme-main: $primary-warm;
-	$theme-main-light: $primary-warm-light;
+	$theme-color: $primary-warm;
+	$theme-color-light: $primary-warm-light;
 	$theme-comp: $primary-cool;
 	$theme-comp-light: $primary-cool-light;
 }
 
-@if $theme-color == 'purple' {
+@if $swiss-theme-color == 'purple' {
 	// green with purple complements
 	$primary-warm-light: $swiss-green-light;
 	$primary-warm: $swiss-green;
@@ -64,13 +64,28 @@ $theme-comp-light: $primary-cool-light;
 	$primary-cool: $swiss-purple;
 	$primary-cool-dark: $swiss-purple-dark;
 	
-	$theme-main: $primary-cool;
-	$theme-main-light: $primary-cool-light;
+	$theme-color: $primary-cool;
+	$theme-color-light: $primary-cool-light;
 	$theme-comp: $primary-warm;
 	$theme-comp-light: $primary-warm-light;
 }
 
-@if $theme-color == 'yellow' {
+@if $swiss-theme-color == 'teal' {
+	// green with purple complements
+	$primary-warm-light: $swiss-orange-light;
+	$primary-warm: $swiss-orange;
+	$primary-warm-dark: $swiss-orange-dark;
+	$primary-cool-light: $swiss-teal-light;
+	$primary-cool: $swiss-teal;
+	$primary-cool-dark: $swiss-teal-dark;
+	
+	$theme-color: $primary-cool;
+	$theme-color-light: $primary-cool-light;
+	$theme-comp: $primary-warm;
+	$theme-comp-light: $primary-warm-light;
+}
+
+@if $swiss-theme-color == 'yellow' {
 	// green with purple complements
 	$primary-warm-light: $swiss-yellow-light;
 	$primary-warm: $swiss-yellow;
@@ -79,94 +94,85 @@ $theme-comp-light: $primary-cool-light;
 	$primary-cool: $swiss-purple;
 	$primary-cool-dark: $swiss-purple-dark;
 	
-	$theme-main: $primary-warm;
-	$theme-main-light: $primary-warm-light;
+	$theme-color: $primary-warm;
+	$theme-color-light: $primary-warm-light;
 	$theme-comp: $primary-cool;
 	$theme-comp-light: $primary-cool-light;
 }
 
-$theme-white: $swiss-white;
-$theme-white-dark: $swiss-white-dark;
-
-$theme-black: $swiss-black;
-$theme-gray: $swiss-gray;
-$theme-gray-light: $swiss-gray-light;
+// $theme-white: $swiss-white;
+// $theme-white-dark: $swiss-white-dark;
+// 
+// $theme-black: $swiss-black;
+// $theme-gray: $swiss-gray;
+// $theme-gray-light: $swiss-gray-light;
 
 // inititalize all variables so that they
 // continue outsie of the if statement
 
-$base-tint: null;
-$base-tint-light: null;
-$contrast-tint-light: null;
-$contrast-tint-dark: null;
-
-$site-background-color: null;
-$site-background-color-offset: null;
-$site-background-contrast-high: null;
+$site-background-base: null;
+$site-background-base-offset: null;
 $site-background-contrast-low: null;
-$color-code: null;
-$color-code-outline: null;
-$color-background: null;
-$color-dot-accent: null;
-$color-home-header: null;
-$color-page-header: null;
-$color-body-text: null;
-$color-text-accent: null;
-$color-nav-link: null;
-$color-nav-link-hover: null;
-$color-primary-link: null;
-$color-primary-link-hover: null;
+$site-background-contrast-high: null;
+$code-text-color: null;
+$code-outline-color: null;
 $color-border: null;
+//$dot-accent-color: $site-background-contrast-high;
+$home-header-color: null;
+$page-header-color: null;
+$text-base-color: null;
+$text-accent-color: null;
+$link-primary-color: null;
+$link-primary-color-hover: null;
+$nav-link-color: null;
+$nav-link-color-hover: null;
+$nav-link-home-color: null;
+$nav-link-home-color-hover: null;
 
-@if $theme-style == 'light' {
+@if $swiss-theme-style == 'light' {
 	// set all site colors
-	$site-background-color: $theme-white;
-	$site-background-color-offset: $theme-white-dark;
-	$site-background-contrast-high: $theme-gray;
-	$site-background-contrast-low: $theme-gray-light;
-	$color-code: $theme-main-light;
-	$color-code-outline: $theme-white-dark;
-	$color-background: $theme-main;
-	$color-dot-accent: $theme-black;
-	$color-home-header: $theme-white;
-	$color-page-header: $theme-white-dark;
-	$color-body-text: $theme-black;
-	$color-text-accent: $theme-main;
-	$color-nav-link: $theme-white;
-	$color-nav-link-hover: $theme-black;
-	$color-primary-link: $theme-main;
-	$color-primary-link-hover: $theme-black;
-	$color-border: $theme-main;
+	$site-background-base: $swiss-white;
+	$site-background-base-offset: $swiss-white-dark;
+	$site-background-contrast-low: $swiss-gray;
+	$site-background-contrast-high: $swiss-black;
+	$code-text-color: $theme-color-light;
+	$code-outline-color: $site-background-base-offset;
+	$color-border: $theme-color;
+	//$dot-accent-color: $site-background-contrast-high;
+	$home-header-color: $site-background-base;
+	$page-header-color: $site-background-base-offset;
+	$text-base-color: $site-background-contrast-high;
+	$text-accent-color: $theme-color;
+	$link-primary-color: $text-accent-color;
+	$link-primary-color-hover: $site-background-contrast-high;
+	$nav-link-color: $site-background-contrast-high;
+	$nav-link-color-hover: $theme-color;
+	$nav-link-home-color: $site-background-base;
+	$nav-link-home-color-hover: $site-background-contrast-high;
+
 }
 
-@if $theme-style == 'dark' {
+@if $swiss-theme-style == 'dark' {
 	// set all site colors
+	$site-background-base: $swiss-black;
+	$site-background-base-offset: $swiss-gray;
+	$site-background-contrast-low: $swiss-white-dark;
+	$site-background-contrast-high: $swiss-white-dark;
+	$code-text-color: $theme-color-light;
+	$code-outline-color: $site-background-base-offset;
+	$color-border: $theme-color-light;
+	//$dot-accent-color: $site-background-contrast-high;
+	$home-header-color: $site-background-base;
+	$page-header-color: $site-background-base-offset;
+	$text-base-color: $site-background-contrast-low;
+	$text-accent-color: $theme-color-light;
+	$link-primary-color: $text-accent-color;
+	$link-primary-color-hover: $site-background-contrast-high;
+	$nav-link-color: $site-background-contrast-high;
+	$nav-link-color-hover: $theme-color-light;
+	$nav-link-home-color: $site-background-base;
+	$nav-link-home-color-hover: $site-background-contrast-high;
 	
-	// start with a base tint and a light version of it
-	$base-tint: $swiss-black;
-	$base-tint-light: $swiss-gray;
-	
-	$contrast-tint-light: $swiss-white;
-	$contrast-tint-dark: $swiss-white-dark;
-	
-	$site-background-color: $theme-black;
-	$site-background-color-offset: $swiss-gray;
-	$site-background-contrast-high: $theme-white;
-	$site-background-contrast-low: $theme-white-dark;
-	
-	$color-code: $theme-main-light;
-	$color-code-outline: $theme-gray;
-	$color-background: $theme-main;
-	$color-dot-accent: $theme-white-dark;
-	$color-home-header: $theme-black;
-	$color-page-header: $theme-black;
-	$color-body-text: $theme-white-dark;
-	$color-text-accent: $theme-main;
-	$color-nav-link: $theme-black;
-	$color-nav-link-hover: $theme-white-dark;
-	$color-primary-link: $theme-main;
-	$color-primary-link-hover: $theme-white-dark;
-	$color-border: $theme-main;
 }
 
 // button colors
@@ -178,10 +184,10 @@ $success-color: $swiss-green-light;
 $warning-color: $swiss-orange-light;
 $danger-color: $swiss-red;
 $info-color: $swiss-purple;
-$facebook-color: $theme-main;
-$twitter-color: $theme-main;
-$google-plus-color: $theme-main;
-$linkedin-color: $theme-main;
+$facebook-color: $theme-color;
+$twitter-color: $theme-color;
+$google-plus-color: $theme-color;
+$linkedin-color: $theme-color;
 
 // YIQ color contrast, needed
 // in buttons/notices from minimal-mistakes

@@ -39,15 +39,16 @@
 .border-0 { border: 0; }
 
 /* Theme color utilities */
-.header-background { background-color: $theme-main; }
-.header-border { border-color: $theme-black; }
-.header-title-home { color: $color-home-header; }
-.header-title-page { color: $color-page-header; }
-.header-text { color: $theme-black; }
-.header-social { fill: $theme-black; }
-.header-social:hover { fill: $theme-white; }
+.header-background { background-color: $theme-color; }
+.header-border { border-color: $site-background-contrast-high; }
+.header-title-home { color: $home-header-color; }
+.header-title-page { color: $page-header-color; }
+.header-text { color: $site-background-contrast-high; }
+.header-social { fill: $site-background-contrast-high; }
+.header-social:hover { fill: $site-background-base; }
 
 /* from https://codepen.io/steveg3003/pen/PzvjAE */
+// for making linear gradient
 .header-multicolor-background
 {
 	background: linear-gradient(120deg, rgba(50, 150, 100, 0.6) , rgba(0, 0, 100, 0) );
@@ -55,25 +56,15 @@
 .header-multicolor-container
 {
 	background: linear-gradient(240deg, rgba(150, 50, 50, 0.6) , rgba(0, 0, 200, 0) );
-	
-    //display: flex;
-	//flex-direction: column;
-    //align-items: center;
-  	//justify-content: center;
-	//margin: 0;
-	//padding: 0;
-	//height: 100%;
-	//width: 100%;
 }
 
-
-
-.header-social-inverted { background: $theme-black }
-.header-social-inverted:hover { background: $theme-white }
-.header-social-accent { fill: $theme-main-light; } // not used now, for a randomly accented dot
-.header-link:hover { color: $color-nav-link-hover !important; } // used for navigation links on homepage
-.header-link { color: $color-nav-link !important; } // added by Baird to make first page links white
-.text-accent { color: $theme-main; } // used for date in post list and home link
+.header-social-inverted { background: $site-background-base }
+//.header-social-inverted:hover { background: $site-background-base }
+//.header-social-inverted:hover { background: mix($site-background-base, $site-background-contrast-high, 80%) }
+.header-social-accent { fill: $theme-color-light; } // not used now, for a randomly accented dot
+.header-link:hover { color: $nav-link-home-color-hover !important; } // used for navigation links on homepage
+.header-link { color: $nav-link-home-color !important; } // added by Baird to make first page links white
+.text-accent { color: $text-accent-color; } // used for date in post list and home link
 
 /* Layout utilities */
 .container { max-width: $container-width; }
@@ -200,7 +191,7 @@
   text-decoration: none;
 
   &:hover {
-    color: $color-primary-link-hover;
+    color: $nav-link-home-color-hover;
     text-decoration: none;
   }
 }
@@ -212,17 +203,17 @@
   //transform: scale(1.25);
 }
 
-.link-social {
-  text-decoration: none;
-  font-weight: bold;
-  line-height: 1;
-  
-  &:hover {
-    @extend %social-icon-hover;
-    text-decoration: none !important;
-    
-  }
-}
+// .link-social {
+//   text-decoration: none;
+//   font-weight: bold;
+//   line-height: 1;
+//   
+//   &:hover {
+//     @extend %social-icon-hover;
+//     text-decoration: none !important;
+//     
+//   }
+// }
 
 //OLD VERSION:
 ///// Link styles for social icons

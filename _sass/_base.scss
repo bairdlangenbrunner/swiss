@@ -29,8 +29,8 @@ body {
     font-family: $body-font-family;
     font-size: $body-font-size;
     line-height: 1.25;
-    color: $color-body-text;
-    background-color: $site-background-color; /*#fff;*/
+    color: $text-base-color;
+    background-color: $site-background-base;
 }
 
 p {
@@ -52,10 +52,10 @@ h6, .h6 { font-size: $h6-size; text-transform: uppercase; letter-spacing: 0.02em
 
 /*inherit*/
 a {
-  color: $color-primary-link;
+  color: $link-primary-color;
   text-decoration: none;
 }
 a:hover {
-  color: $color-primary-link;
+  color: $link-primary-color;
   //text-decoration: underline;
 }

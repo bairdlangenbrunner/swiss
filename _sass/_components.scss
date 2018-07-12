@@ -6,20 +6,20 @@ pre {
     width: 100%; // matches col-9
     white-space: pre-wrap;
     //overflow-x: auto;
-    border-left: $spacer-1 solid $color-code; // adds vertical chunk
+    border-left: $spacer-1 solid $theme-color; // adds vertical chunk
     padding-left: $body-font-size; //16px; // adds small margin to left
-    border-top: solid 2px $color-code-outline;
-    border-bottom: solid 2px $color-code-outline;
-    border-right: solid 2px $color-code-outline;
+    border-top: solid 2px $code-outline-color;
+    border-bottom: solid 2px $code-outline-color;
+    border-right: solid 2px $code-outline-color;
     line-height: 1.25; // controls BOXED code snippets
     padding-top: 4px;
     padding-bottom: 4px;
     //padding-left: 5px;
-    //background-color: $color-code-background;
+    //background-color: $code-text-color-background;
 }
 
 code {
-    color: $color-code;
+    color: $code-text-color;
     font-size: 15px; //$body-font-size; // controls ALL code fonts
     //padding: 0px; //1px 4px;
     //text-indent: 20em hanging;
@@ -66,7 +66,7 @@ code {
     //margin: 40px 0 40px -16px;
     //border-left: $spacer-1 solid $color-border;
     //font-style: italic; baird commented out
-    border-left: $spacer-1 solid $color-code;
+    border-left: $spacer-1 solid $code-text-color;
     margin: $spacer-3 0;
     padding-left: $body-font-size;
 
@@ -88,7 +88,7 @@ code {
   }
 
   hr {
-    color: $color-body-text;
+    color: $text-base-color;
     border-style: solid;
     border-width: thin;
     margin-top: 0.5em;
@@ -125,18 +125,18 @@ code {
     th,
     td {
       padding: $spacer-2 $spacer-3 $spacer-2 2px;
-      border-top: 1px solid $color-body-text;
-      border-bottom: 1px solid $color-body-text;
+      border-top: 1px solid $text-base-color;
+      border-bottom: 1px solid $text-base-color;
     }
 
     tr {
-      background-color: $site-background-color; //#fff;
-      border-top: 1px solid $color-body-text;
+      background-color: $site-background-base;
+      border-top: 1px solid $text-base-color;
     }
 
     tr th {
-      border-top: 2px solid $color-body-text;
-      border-bottom: 2px solid $color-body-text;
+      border-top: 2px solid $text-base-color;
+      border-bottom: 2px solid $text-base-color;
     }
   }
 

@@ -2,6 +2,7 @@ title: Swiss cheese
 theme_color: green-light # options: yellow, orange, green, teal, purple, black
 #theme_style: light # options: dark or light (for background)
 syntax_highlighting: light # light or dark (solarized color scheme)
+gradient_header: false
 
 author: Baird
 email: langenbrunner@gmail.com
