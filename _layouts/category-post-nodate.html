@@ -3,16 +3,15 @@ layout: default
 ---
 <article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
   <h1 class="h1 col-9 sm-width-full inline-block" itemprop="name headline">{{ page.title }}</h1>
-  <div class="col-4 sm-width-full mb-1 border-top-thin ">
-    <p class="mb-3 mt-1 py-0 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B, %Y" }}</time></p>
-  </div>
-
+  <div class="col-4 sm-width-full mb-3 border-top-thin "></div>
   <div class="prose" itemprop="articleBody">
       {{ content }}
   </div>
 
 </article>
 
+<!--
 <div class="container mx-auto px-2 py-2 clearfix">
   {% include previous-next_has-categories.html %}
 </div>
+-->

@@ -36,9 +36,14 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: coding
+      type: writing
     values:
-      layout: page
+      layout: category-post-nodate
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: category-post
 
 collections_dir: collections
 

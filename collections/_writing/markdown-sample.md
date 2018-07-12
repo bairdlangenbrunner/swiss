@@ -1,7 +1,6 @@
 ---
-layout: post
 title:  "Markdown sample"
-date:   2016-09-04
+order: 2
 ---
 
 ### Markdown test document

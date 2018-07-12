@@ -6,17 +6,11 @@ order: 5
 ---
 
 A place to put all written things that aren't specifically blog articles.
-<!--
 
-Set the front matter:
-title = your page title and link name in the navigation
-permalink = the url for the page, i.e. example.com/my-awesome-category
-category_name = the name of the cateogry you want to use to group posts, you'll need to use the same name on post pages
-
-Save this page in the root directory.
-Use the same name for the filename as the permalink, i.e.
-
-permalink: /my-awesome-category/
-filename: my-awesome-category.html
-
--->
+{% assign sorted_pages = site.writing | sort:"order" %}
+{% for item in sorted_pages %}
+ <!-- <h2>{{ item.title }}</h2>-->
+  <!--<p>{{ item.description }}</p>-->
+  <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+  <p>{{ item.description }}</p>
+{% endfor %}
