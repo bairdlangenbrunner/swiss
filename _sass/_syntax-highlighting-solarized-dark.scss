@@ -2,7 +2,7 @@
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
   color: #93a1a1;
-  background-color: #002b36;
+  background-color: $site-background-base-offset; //##002b36;
 }
 .highlight .err {
   color: #002b36;

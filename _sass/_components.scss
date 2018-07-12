@@ -21,8 +21,8 @@ pre {
 code {
     color: $code-text-color;
     font-size: 15px; //$body-font-size; // controls ALL code fonts
-    //padding: 0px; //1px 4px;
-    //text-indent: 20em hanging;
+    background-color: $site-background-base-offset; // controls background of in-line code only
+    padding: 2px 4px // topbottom, leftright
 }
 
 .prose {
@@ -52,12 +52,12 @@ code {
   }
 
 //   img {
-// 
+//
 //     max-width: 100%;
 //     @media (min-width: $breakpoint-lg) {
 //       max-width: (12 / 10 * 100%); // make image fill width of container on desktop
 //     }
-// 
+//
 //   }
 
   blockquote {

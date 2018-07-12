@@ -2,11 +2,11 @@
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
   color: #586e75;
-  background-color: #fdf6e3;
+  background-color: $site-background-base-offset; //##fdf6e3;
 }
 .highlight .err {
   color: #002b36;
-  background-color: #dc322f;
+  background-color: dc322f;
 }
 .highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
   color: #657b83;
