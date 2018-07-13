@@ -53,4 +53,4 @@ collections_dir: collections
 
 # Build settings
 markdown: kramdown
-highlighter: rouge
+#highlighter: rouge

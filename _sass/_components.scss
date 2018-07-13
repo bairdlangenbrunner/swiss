@@ -4,9 +4,9 @@
 pre {
     margin: $spacer-3 0;
     width: 100%; // matches col-9
-    white-space: pre-wrap;
+    //white-space: pre-wrap;
     //overflow-x: auto;
-    border-left: $spacer-1 solid $theme-color; // adds vertical chunk
+    border-left: $spacer-1 solid $theme-color; // adds left border
     padding-left: $body-font-size; //16px; // adds small margin to left
     border-top: solid 2px $code-outline-color;
     border-bottom: solid 2px $code-outline-color;
@@ -22,7 +22,7 @@ code {
     color: $code-text-color;
     font-size: 15px; //$body-font-size; // controls ALL code fonts
     background-color: $site-background-base-offset; // controls background of in-line code only
-    padding: 2px 4px // topbottom, leftright
+    //padding: 2px 0px; // topbottom, leftright
 }
 
 .prose {
