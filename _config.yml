@@ -31,6 +31,9 @@ collections:
   writing:
     output: true
     permalink: /:collection/:name
+  misc:
+    output: true
+    permalink: /:collection/:name
 
 defaults:
   - scope:

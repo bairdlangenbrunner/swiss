@@ -5,6 +5,8 @@ permalink: /about/
 order: 1
 ---
 
+Before you do anything, check [this out][important-link].
+
 This theme is adapted from Swiss, which itself was "inspired by Swiss design and the works of Massimo Vignelli."  I (Baird) think it's a beautiful theme to start from, and I wanted to edit it to include things like more advanced syntax highlighting and simpler page responses to media.
 
 The primary reason I was attracted to this theme--and Jekyll/GitHub Pages more generally--is the fact that it allows for easy markdown-inspired blogging, code documentation, and research tangents all within the same document.
@@ -41,6 +43,8 @@ def plus(a,b):
 ```
 
 I'll update this with more information as I develop my personal websites.
+
+[important-link]: /important/
 
 <!--
 ### Features:
