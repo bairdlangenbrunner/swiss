@@ -7,12 +7,13 @@ posts_on_homepage: true
 
 author: Baird
 email: langenbrunner@gmail.com
+github_username:  bairdlangenbrunner
+github_repo: swiss-cheese
 timezone: America/Los_Angeles
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:  heyitsbaird
-github_username:  bairdlangenbrunner
 linkedin_username:  bairdlangenbrunner
 
 
