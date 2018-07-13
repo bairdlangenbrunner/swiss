@@ -14,6 +14,11 @@
   word-wrap: break-word;
 }
 
+.li-post-block {
+  color: $theme-color;
+  font-size: $h2-size;
+}
+
 .text-right { text-align: right; }
 .no-underline {
   text-decoration: none !important;
