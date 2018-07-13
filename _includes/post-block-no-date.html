@@ -1,8 +1,9 @@
 <!-- Renders post date, title, and snippet of text. -->
+
 <div class="py-1 prose">
   <!--<a class="no-underline h4 bold text-accent" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%B, %Y" }}</a>-->
   <!--<h2 class="no-underline h4 bold">{{ post.date | date: "%B, %Y" }}</h2>-->
-  <h2 class="h1 lh-condensed col-9 mt-0">
+  <h2 class="h2 lh-condensed col-9 mt-0 always-full-width-of-container">
     <a class="link-primary" title="{{ post.url | prepend: site.baseurl }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
   </h2>
   <!--<p>{{ post.content | strip_html | truncatewords:30 }}</p>-->

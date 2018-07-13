@@ -10,7 +10,7 @@
   }
 }
 
-.h1 {
+.h1,.h2 {
   word-wrap: break-word;
 }
 
@@ -89,7 +89,7 @@
 
 // added by baird to make footer full screen width ALWAYS (change in footer.html)
 @media (min-width: 0em) {
-  .always-width-full { width: 100% !important; }
+  .always-full-width-of-container { width: 100% !important; }
 }
 
 .block        { display: block !important; }

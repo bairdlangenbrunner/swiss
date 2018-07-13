@@ -51,14 +51,12 @@ code {
     }
   }
 
-//   img {
-//
-//     max-width: 100%;
-//     @media (min-width: $breakpoint-lg) {
-//       max-width: (12 / 10 * 100%); // make image fill width of container on desktop
-//     }
-//
-//   }
+  img {
+    max-width: 100%;
+    @media (min-width: $breakpoint-lg) {
+      max-width: (12 / 10 * 100%); // make image fill width of container on desktop
+    }
+  }
 
   blockquote {
     //line-height: 1.375;
