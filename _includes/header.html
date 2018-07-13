@@ -41,7 +41,6 @@ BAIRD NOTE:  this is the navigation bar
     <ul class="list-reset">
       {% assign sorted_pages = site.pages | sort:"order" %}
       {% for my_page in sorted_pages %}
-
       {% if my_page.order > 0 %}
         {% if my_page.title %}
         <li class="inline-block">
@@ -50,8 +49,7 @@ BAIRD NOTE:  this is the navigation bar
           </a>
         </li>
         {% endif %}
-        
-        {% endif %}
+      {% endif %}
       {% endfor %}
     </ul>
   </div>

@@ -5,24 +5,30 @@
 
   <body>
     <div>
-    
+
       {% if site.gradient_header %}
       <header class="header-multicolor-background">
       <header class="header-multicolor-container">
       {% else %}
       <header class="header-background">
       {% endif %}
-      
+
         <div class="clearfix border-bottom-thick header-border">
           <ul class="list-reset right py-1 header-text font-smoothing">
+
             {% assign sorted_pages = site.pages | sort:"order" %}
             {% for my_page in sorted_pages %}
+            {% if my_page.order > 0 %}
               {% if my_page.title %}
               <li class="inline-block">
-                <a class="align-middle link-primary header-link mr-2" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                <a class="align-middle link-primary header-link mr-2" href="{{ my_page.url | prepend: site.baseurl }}">
+                  {{ my_page.title }}
+                </a>
               </li>
               {% endif %}
+            {% endif %}
             {% endfor %}
+
           </ul>
         </div>
         <div class="container mx-auto px-2 clearfix header-text">
@@ -45,22 +51,22 @@
             </div>
           </div>
         </div>
-    
+
       {% if site.gradient_header %}
       </header>
       </header>
       {% else %}
       </header>
       {% endif %}
-      
+
     </div>
-    
+
     <div class="container mx-auto px-2 py-4">
         {% for post in site.posts %}
         {% include post_block.html %}
         {% endfor %}
     </div>
-    
+
     {% include footer.html %}
   </body>
 </html>
