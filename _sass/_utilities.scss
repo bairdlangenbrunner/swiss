@@ -42,7 +42,7 @@
 .header-background { background-color: $theme-color; }
 .header-border { border-color: $site-background-contrast-high; }
 .header-title-home { color: $home-header-color; }
-.header-title-page { color: $page-header-color; }
+.header-title-page { color: $site-background-base-offset; }//mix($site-background-base, $theme-color, 50%); }
 .header-text { color: $site-background-contrast-high; }
 .header-social { fill: $site-background-contrast-high; }
 .header-social:hover { fill: $site-background-base; }
@@ -207,11 +207,11 @@
 //   text-decoration: none;
 //   font-weight: bold;
 //   line-height: 1;
-//   
+//
 //   &:hover {
 //     @extend %social-icon-hover;
 //     text-decoration: none !important;
-//     
+//
 //   }
 // }
 
@@ -221,7 +221,7 @@
 //   text-decoration: none;
 //   font-weight: bold;
 //   line-height: 1;
-// 
+//
 //   &:hover {
 //     text-decoration: none !important;
 //   }
