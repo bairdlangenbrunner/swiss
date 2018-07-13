@@ -37,7 +37,7 @@ defaults:
       path: ""
       type: writing
     values:
-      layout: post-nodate
+      layout: post-no-date
   - scope:
       path: ""
       type: posts
