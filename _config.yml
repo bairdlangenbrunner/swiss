@@ -37,12 +37,12 @@ defaults:
       path: ""
       type: writing
     values:
-      layout: category-post-nodate
+      layout: post-nodate
   - scope:
       path: ""
       type: posts
     values:
-      layout: category-post
+      layout: post
   - scope:
       path: ""
       type: pages
