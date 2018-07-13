@@ -82,6 +82,7 @@
 .col-11 { width: (11 / 12 * 100%); }
 .col-12 { width: 100%; }
 
+// FIXES NAVBAR STUFF
 @media (max-width: $breakpoint-lg) {
   .sm-width-full { width: 100% !important; }
   .align-left-and-pad-when-small {margin-left: 0 !important; padding-right: $body-font-size !important; }
@@ -153,8 +154,6 @@
 
 .mb-minus-3 { margin-bottom: -$spacer-3; } // added by Baird
 
-//// BAIRD REMOVING THIS BECAUSE IT'S MAKING THE MARGINS DO FUNNY THINGS
-//// IN THE NAVIGATION BAR...
 // Responsive margin
 @media (min-width: $breakpoint-lg) {
   .mx-lg-auto { margin-left: auto; margin-right: auto; }
