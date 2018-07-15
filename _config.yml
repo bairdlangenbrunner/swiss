@@ -4,6 +4,8 @@ theme_color: green-light # options: yellow, orange, green, teal, purple, black
 syntax_highlighting: light # light or dark (solarized color scheme)
 gradient_header: true
 posts_on_homepage: true
+large_header_homepage: false
+
 
 author: Baird
 email: langenbrunner@gmail.com
