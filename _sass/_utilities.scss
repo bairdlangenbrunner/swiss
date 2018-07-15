@@ -51,7 +51,7 @@
 .header-title-home { color: $home-header-color; }
 .header-title-page { color: $site-background-base-offset; }//mix($site-background-base, $theme-color, 50%); }
 .header-text { color: $site-background-contrast-high; }
-.header-homepage-text { color: $site-background-base; }
+.header-homepage-text { color: $site-background-base; font-weight: bold;}
 .header-social { fill: $site-background-contrast-high; }
 .header-social:hover { fill: $site-background-base; }
 
