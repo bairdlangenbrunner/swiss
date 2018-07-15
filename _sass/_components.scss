@@ -122,7 +122,10 @@ code {
 
     th,
     td {
-      padding: $spacer-2 $spacer-3 $spacer-2 2px;
+      padding-top: 8px;//$spacer-2 $spacer-3 $spacer-2 2px;
+      padding-bottom: 8px;
+      padding-left: $body-font-size;
+      padding-right: $body-font-size;
       border-top: 1px solid $text-base-color;
       border-bottom: 1px solid $text-base-color;
       border-left: 1px solid $text-base-color;
@@ -135,8 +138,8 @@ code {
     }
 
     tr th {
-      border-top: 2px solid $text-base-color;
-      border-bottom: 2px solid $text-base-color;
+      border-top: 3px solid $text-base-color;
+      border-bottom: 3px solid $text-base-color;
     }
   }
 
