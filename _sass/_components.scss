@@ -125,6 +125,8 @@ code {
       padding: $spacer-2 $spacer-3 $spacer-2 2px;
       border-top: 1px solid $text-base-color;
       border-bottom: 1px solid $text-base-color;
+      border-left: 1px solid $text-base-color;
+      border-right: 1px solid $text-base-color;
     }
 
     tr {
