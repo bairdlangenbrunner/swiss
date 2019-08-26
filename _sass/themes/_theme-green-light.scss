@@ -85,6 +85,36 @@ $theme-comp-light: $primary-cool-light;
 	$theme-comp-light: $primary-warm-light;
 }
 
+@if $swiss-theme-color == 'yellow' {
+	// yellow with green complements
+	$primary-warm-light: $swiss-yellow-light;
+	$primary-warm: $swiss-yellow;
+	$primary-warm-dark: $swiss-yellow-dark;
+	$primary-cool-light: $swiss-green-light;
+	$primary-cool: $swiss-green;
+	$primary-cool-dark: $swiss-green-dark;
+	
+	$theme-color: $primary-cool;
+	$theme-color-light: $primary-cool-light;
+	$theme-comp: $primary-warm;
+	$theme-comp-light: $primary-warm-light;
+}
+
+@if $swiss-theme-color == 'black' {
+	// black with black complements
+	$primary-warm-light: $swiss-black-light;
+	$primary-warm: $swiss-black;
+	$primary-warm-dark: $swiss-black-dark;
+	$primary-cool-light: $swiss-black-light;
+	$primary-cool: $swiss-black;
+	$primary-cool-dark: $swiss-black-dark;
+
+	$theme-color: $primary-cool;
+	$theme-color-light: $primary-cool-light;
+	$theme-comp: $primary-warm;
+	$theme-comp-light: $primary-warm-light;
+}
+
 $site-background-base: null;
 $site-background-base-offset: null;
 $site-background-contrast-low: null;
