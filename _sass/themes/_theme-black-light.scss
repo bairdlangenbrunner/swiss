@@ -1,0 +1,194 @@
+// import color-variables.scss
+// if you want to add any colors, change them there
+@import 'color-variables';
+
+//$theme-style: '{{ site.theme_style | default: 'light' }}';
+//$theme-style: 'dark';
+
+$swiss-theme-color: 'black';
+$swiss-theme-style: 'light';
+
+$primary-warm-light: null;
+$primary-warm: null;
+$primary-warm-dark: null;
+$primary-cool-light: null;
+$primary-cool: null;
+$primary-cool-dark: null;
+
+$theme-color: $primary-warm;
+$theme-color-light: $primary-warm-light;
+$theme-comp: $primary-cool;
+$theme-comp-light: $primary-cool-light;
+
+//$theme-color: '{{ site.theme_color | default: 'green' }}';
+// choose either a warm or cool color and a ligher version
+// as the theme-color and theme-color-light.  This is the primary
+// color on the front page, and what a lot of design is based on
+
+@if $swiss-theme-color == 'green' {
+	// green with purple complements
+	$primary-warm-light: $swiss-green-light;
+	$primary-warm: $swiss-green;
+	$primary-warm-dark: $swiss-green-dark;
+	$primary-cool-light: $swiss-purple-light;
+	$primary-cool: $swiss-purple;
+	$primary-cool-dark: $swiss-purple-dark;
+
+	$theme-color: $primary-warm;
+	$theme-color-light: $primary-warm-light;
+	$theme-comp: $primary-cool;
+	$theme-comp-light: $primary-cool-light;
+}
+
+@if $swiss-theme-color == 'orange' {
+	// green with purple complements
+	$primary-warm-light: $swiss-orange-light;
+	$primary-warm: $swiss-orange;
+	$primary-warm-dark: $swiss-orange-dark;
+	$primary-cool-light: $swiss-teal-light;
+	$primary-cool: $swiss-teal;
+	$primary-cool-dark: $swiss-teal-dark;
+
+	$theme-color: $primary-warm;
+	$theme-color-light: $primary-warm-light;
+	$theme-comp: $primary-cool;
+	$theme-comp-light: $primary-cool-light;
+}
+
+@if $swiss-theme-color == 'purple' {
+	// green with purple complements
+	$primary-warm-light: $swiss-green-light;
+	$primary-warm: $swiss-green;
+	$primary-warm-dark: $swiss-green-dark;
+	$primary-cool-light: $swiss-purple-light;
+	$primary-cool: $swiss-purple;
+	$primary-cool-dark: $swiss-purple-dark;
+
+	$theme-color: $primary-cool;
+	$theme-color-light: $primary-cool-light;
+	$theme-comp: $primary-warm;
+	$theme-comp-light: $primary-warm-light;
+}
+
+@if $swiss-theme-color == 'teal' {
+	// green with purple complements
+	$primary-warm-light: $swiss-orange-light;
+	$primary-warm: $swiss-orange;
+	$primary-warm-dark: $swiss-orange-dark;
+	$primary-cool-light: $swiss-teal-light;
+	$primary-cool: $swiss-teal;
+	$primary-cool-dark: $swiss-teal-dark;
+
+	$theme-color: $primary-cool;
+	$theme-color-light: $primary-cool-light;
+	$theme-comp: $primary-warm;
+	$theme-comp-light: $primary-warm-light;
+}
+
+@if $swiss-theme-color == 'black' {
+	// green with purple complements
+	$primary-warm-light: $swiss-black-light;
+	$primary-warm: $swiss-black;
+	$primary-warm-dark: $swiss-black-dark;
+	$primary-cool-light: $swiss-black-light;
+	$primary-cool: $swiss-black;
+	$primary-cool-dark: $swiss-black-dark;
+
+	$theme-color: $primary-cool;
+	$theme-color-light: $primary-cool-light;
+	$theme-comp: $primary-warm;
+	$theme-comp-light: $primary-warm-light;
+}
+
+$site-background-base: null;
+$site-background-base-offset: null;
+$site-background-contrast-low: null;
+$site-background-contrast-high: null;
+$code-text-color: null;
+$code-outline-color: null;
+$color-border: null;
+//$dot-accent-color: $site-background-contrast-high;
+$home-header-color: null;
+$page-header-color: null;
+$text-base-color: null;
+$text-accent-color: null;
+$link-primary-color: null;
+$link-primary-color-hover: null;
+$nav-link-color: null;
+$nav-link-color-hover: null;
+$nav-link-home-color: null;
+$nav-link-home-color-hover: null;
+
+@if $swiss-theme-style == 'light' {
+	// set all site colors
+	$site-background-base: $swiss-white;
+	$site-background-base-offset: $swiss-white-dark;
+	$site-background-contrast-low: $swiss-gray;
+	$site-background-contrast-high: $swiss-black;
+	$code-text-color: $theme-color-light;
+	$code-outline-color: $site-background-base-offset;
+	$color-border: $theme-color;
+	//$dot-accent-color: $site-background-contrast-high;
+	$home-header-color: $site-background-base;
+	$page-header-color: $site-background-base-offset;
+	$text-base-color: $site-background-contrast-high;
+	$text-accent-color: $theme-color;
+	$link-primary-color: $text-accent-color;
+	$link-primary-color-hover: $site-background-contrast-high;
+	$nav-link-color: $site-background-contrast-high;
+	$nav-link-color-hover: $theme-color;
+	$nav-link-home-color: $site-background-base;
+	$nav-link-home-color-hover: $site-background-contrast-high;
+
+}
+
+@if $swiss-theme-style == 'dark' {
+	// set all site colors
+	$site-background-base: $swiss-black;
+	$site-background-base-offset: $swiss-gray;
+	$site-background-contrast-low: $swiss-white-dark;
+	$site-background-contrast-high: $swiss-white-dark;
+	$code-text-color: $theme-color-light;
+	$code-outline-color: $site-background-base-offset;
+	$color-border: $theme-color-light;
+	//$dot-accent-color: $site-background-contrast-high;
+	$home-header-color: $site-background-base;
+	$page-header-color: $site-background-base-offset;
+	$text-base-color: $site-background-contrast-low;
+	$text-accent-color: $theme-color-light;
+	$link-primary-color: $text-accent-color;
+	$link-primary-color-hover: $site-background-contrast-high;
+	$nav-link-color: $site-background-contrast-high;
+	$nav-link-color-hover: $theme-color-light;
+	$nav-link-home-color: $site-background-base;
+	$nav-link-home-color-hover: $site-background-contrast-high;
+
+}
+
+// button colors
+// note there's a default and a
+// "theme" and "theme-filled" that
+// aren't shown here but are in the
+// buttons.scss file
+$success-color: $swiss-green-light;
+$warning-color: $swiss-orange-light;
+$danger-color: $swiss-red;
+$info-color: $swiss-purple;
+$facebook-color: $theme-color;
+$twitter-color: $theme-color;
+$google-plus-color: $theme-color;
+$linkedin-color: $theme-color;
+
+// YIQ color contrast, needed
+// in buttons/notices from minimal-mistakes
+$yiq-contrasted-dark-default: $swiss-gray;
+$yiq-contrasted-light-default: $swiss-white;
+$yiq-contrasted-threshold: 175;
+$yiq-debug: false;
+
+// Import sass partials (used in all themes)
+@import "variables";
+@import "base";
+@import "components";
+@import "utilities";
+@import "mixins";
