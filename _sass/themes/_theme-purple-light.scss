@@ -102,12 +102,12 @@ $theme-comp-light: $primary-cool-light;
 
 @if $swiss-theme-color == 'black' {
 	// black with black complements
-	$primary-warm-light: $swiss-black-light;
+	$primary-warm-light: $swiss-black;
 	$primary-warm: $swiss-black;
-	$primary-warm-dark: $swiss-black-dark;
-	$primary-cool-light: $swiss-black-light;
+	$primary-warm-dark: $swiss-black;
+	$primary-cool-light: $swiss-black;
 	$primary-cool: $swiss-black;
-	$primary-cool-dark: $swiss-black-dark;
+	$primary-cool-dark: $swiss-black;
 
 	$theme-color: $primary-cool;
 	$theme-color-light: $primary-cool-light;
