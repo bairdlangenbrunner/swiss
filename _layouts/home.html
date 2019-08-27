@@ -7,10 +7,10 @@
     <div>
 
       {% if site.gradient_header %}
-        <header class="header-multicolor-background">
-        <header class="header-multicolor-container">
+        <header class="header-multicolor-background"></header>
+        <header class="header-multicolor-container"></header>
       {% else %}
-        <header class="header-background">
+        <header class="header-background"></header>
       {% endif %}
 
       <div class="clearfix border-bottom-thick header-border">
@@ -57,14 +57,13 @@
         </div>
       {% endif %}
 
+
     <div class="container mx-auto px-2 py-4">
       {% if site.posts_on_homepage %}
         {% for post in site.posts %}
         {% include post-block.html %}
         {% endfor %}
       {% endif %}
-    </div>
-  
     </div>
 
     {% include footer.html %}
