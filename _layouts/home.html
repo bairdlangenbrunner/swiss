@@ -29,33 +29,37 @@
             {% endfor %}
           </ul>
         </div>
-        <div class="container mx-auto px-2 clearfix header-text">
-          <h1 class="h0 inline-block col-10 mt-3 sm-width-full header-title-home">{{ site.title }}</h1>
-          <!--{{ site.title }}Baird<br/>Langen<br/>brunner-->
-          <div class="clearfix">
-            <div class="col-4 sm-width-full left border-top-thin">
-              <div class="table">
-                <div class="inline-block mt-3 mb-3 mr-1">
-                  <!--{% include dot-accent.html %}-->
-                  {% include linkedin.html %}
-                </div>
-                <div class="inline-block mt-3 mb-3 mr-1">
-                  {% include github.html %}
-                </div>
-                <div class="inline-block mt-3 mb-3">
-                  {% include twitter.html %}
+
+        {% if site.home_social_buttons %}
+          <header class="header-multicolor-background">
+          <header class="header-multicolor-container">
+
+          <div class="container mx-auto px-2 clearfix header-text">
+            <h1 class="h0 inline-block col-10 mt-3 sm-width-full header-title-home">{{ site.title }}</h1>
+            <!--{{ site.title }}Baird<br/>Langen<br/>brunner-->
+            <div class="clearfix">
+              <div class="col-4 sm-width-full left border-top-thin">
+                <div class="table">
+                  <div class="inline-block mt-3 mb-3 mr-1">
+                    <!--{% include dot-accent.html %}-->
+                    {% include linkedin.html %}
+                  </div>
+                  <div class="inline-block mt-3 mb-3 mr-1">
+                    {% include github.html %}
+                  </div>
+                  <div class="inline-block mt-3 mb-3">
+                    {% include twitter.html %}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-
-      {% if site.gradient_header %}
-      </header>
-      </header>
-      {% else %}
-      </header>
-      {% endif %}
+        {% else %}
+          <div class="container mx-auto px-2 clearfix header-text">
+            <h1 class="h0 inline-block col-10 mt-3 sm-width-full header-title-home">{{ site.title }}</h1>
+            <!--{{ site.title }}Baird<br/>Langen<br/>brunner-->
+          </div>
+        {% endif %}
 
     </div>
 
