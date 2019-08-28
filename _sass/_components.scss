@@ -160,9 +160,9 @@ code {
     padding-left: $body-font-size;
 }
 
-.img-pad-bottom {
+.img-pad-right-bottom {
   padding-top: 0px;
-  padding-right: 0px;
+  padding-right: $body-font-size;
   padding-bottom: $body-font-size;
   padding-left: 0px;
 }
