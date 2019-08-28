@@ -13,7 +13,11 @@
           <header class="header-background">
         {% endif %}
 
-        <div class="clearfix border-bottom-thick header-border">
+        {% if site.home_accents_bgcolor %}
+          <div class="clearfix border-bottom-thick-bgcolor header-border">
+        {% else %}
+          <div class="clearfix border-bottom-thick header-border">
+        {% endif %}
           <ul class="list-reset right py-1 header-text font-smoothing">
             {% assign sorted_pages = site.pages | sort:"order" %}
             {% for my_page in sorted_pages %}
