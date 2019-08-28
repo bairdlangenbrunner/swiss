@@ -171,13 +171,13 @@ code {
     width: 100%;
 }
 
-img {
+.page-header-img {
   width: 80%;
   height: auto;
 }
 
 @media (max-width: $breakpoint-lg) {
-  img {
+  .page-header-img {
     max-width: 100%;
   }
 }
