@@ -51,12 +51,12 @@ code {
     }
   }
 
-  img {
-    max-width: 100%;
-    @media (min-width: $breakpoint-lg) {
-      max-width: (12 / 10 * 100%); // make image fill width of container on desktop
-    }
-  }
+  // img {
+  //   max-width: 100%;
+  //   @media (min-width: $breakpoint-lg) {
+  //     max-width: (12 / 10 * 100%); // make image fill width of container on desktop
+  //   }
+  // }
 
   blockquote {
     //line-height: 1.375;
@@ -72,13 +72,13 @@ code {
       font-size: $body-font-size; //24px; baird
     }
 
-    //@media (min-width: $breakpoint-lg) {
+    // @media (min-width: $breakpoint-lg) {
     //  padding-left: $spacer-3;
     //  margin: $spacer-4 0 $spacer-4 -40px;
     //  max-width: (11 / 10 * 100%);
 
     //  p {
-        font-size: $body-font-size; //32px; baird
+        // font-size: $body-font-size; //32px; baird
     //  }
 
     //}
@@ -169,4 +169,15 @@ code {
 
 .img-home-page {
     width: 100%;
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+@media (max-width: $breakpoint-lg) {
+  img {
+    max-width: 100%;
+  }
 }
