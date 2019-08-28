@@ -40,7 +40,6 @@
 
 /* Border utilities */
 .border-bottom-thick { border-bottom: 2px solid; border-color: currentColor; }
-.border-bottom-thick-bgcolor { border-bottom: 2px solid; border-color: $site-background-base; }
 .border-bottom-thin { border-bottom: 1px solid; border-color: currentColor; }
 .border-top-thick { border-top: 2px solid; border-color: currentColor; }
 .border-top-thin { border-top: 1px solid; border-color: currentColor; }
@@ -49,6 +48,7 @@
 /* Theme color utilities */
 .header-background { background-color: $theme-color; }
 .header-border { border-color: $site-background-contrast-high; }
+.header-border-bgcolor { border-color: $site-background-base; }
 .header-title-home { color: $home-header-color; }
 .header-title-page { color: $site-background-base-offset; }//mix($site-background-base, $theme-color, 50%); }
 .header-text { color: $site-background-contrast-high; }
