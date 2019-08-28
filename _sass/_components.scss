@@ -172,12 +172,9 @@ code {
 }
 
 .page-header-img {
-  width: 80%;
+  width: 95%;
   height: auto;
-}
-
-@media (max-width: $breakpoint-lg) {
-  .page-header-img {
-    max-width: 100%;
+  @media (max-width: $breakpoint-lg) {
+    width: 100%;
   }
 }
