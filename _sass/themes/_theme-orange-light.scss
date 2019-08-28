@@ -25,21 +25,6 @@ $theme-comp-light: $primary-cool-light;
 // as the theme-color and theme-color-light.  This is the primary
 // color on the front page, and what a lot of design is based on
 
-@if $swiss-theme-color == 'green' {
-	// green with purple complements
-	$primary-warm-light: $swiss-green-light;
-	$primary-warm: $swiss-green;
-	$primary-warm-dark: $swiss-green-dark;
-	$primary-cool-light: $swiss-purple-light;
-	$primary-cool: $swiss-purple;
-	$primary-cool-dark: $swiss-purple-dark;
-
-	$theme-color: $primary-warm;
-	$theme-color-light: $primary-warm-light;
-	$theme-comp: $primary-cool;
-	$theme-comp-light: $primary-cool-light;
-}
-
 @if $swiss-theme-color == 'orange' {
 	// green with purple complements
 	$primary-warm-light: $swiss-orange-light;
